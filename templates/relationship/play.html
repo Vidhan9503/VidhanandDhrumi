@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>{% block title %}Our Little World ♡{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'relationship/css/style.css' %}">
+{% block extra_head %}{% endblock %}
+</head>
+<body>
+<nav class="nav">
+<a class="logo" href="{% url 'relationship:indexpage' %}">us<span>♡</span></a>
+<div class="nav-links">
+<a href="{% url 'relationship:indexpage' %}">home</a>
+<a href="{% url 'relationship:story' %}">story</a>
+<a href="{% url 'relationship:scrapbook' %}">scrapbook</a>
+<a href="{% url 'relationship:places' %}">places</a>
+<a href="{% url 'relationship:cinema' %}">movie</a>
+<a href="{% url 'relationship:jokes' %}">jokes</a>
+<a href="{% url 'relationship:play' %}">play</a>
+<a href="{% url 'relationship:letters' %}">letters</a>
+<a href="{% url 'relationship:future' %}">future</a>
+</div>
+</nav>
+<button class="secret-object secret-heart" id="secretHeart" title="definitely ordinary decoration">♡</button>
+<button class="secret-object secret-star" id="secretStar" title="nothing here">✦</button>
+
+{% block content %}
+<main class="inner-page">
+<header class="page-header"><p class="eyebrow">very serious research</p><h1>how well do<br><em>you know us?</em></h1><p>There will be no prizes. Except bragging rights and my affection.</p></header>
+<section class="quiz-box">
+<div class="quiz-top"><span id="questionNumber">01 / 05</span><span>♡ relationship exam</span></div>
+<h2 id="question">Loading our extremely important question...</h2>
+<div id="answers" class="answers"></div><p id="quizResult" class="quiz-result"></p>
+<button id="nextQuestion" class="btn btn-dark hidden">next →</button>
+</section>
+<section class="would-you"><p class="eyebrow">also</p><h2>some questions<br><em>we should answer.</em></h2>
+<div class="question-stack">
+<div><span>01</span><p>Who would survive longer in a zombie apocalypse?</p></div>
+<div><span>02</span><p>What's one place we absolutely have to visit together?</p></div>
+<div><span>03</span><p>What is the dumbest thing we've ever argued about?</p></div>
+<div><span>04</span><p>What would our tiny apartment look like?</p></div>
+</div>
+</section>
+<section class="final-note"><div class="scribble">one more thing</div><h2>visit the<br><em>inside joke dictionary.</em></h2><p>Because no relationship is complete without vocabulary that makes no sense.</p><a class="btn btn-dark" href="{% url 'relationship:jokes' %}">open dictionary →</a></section>
+</main>
+<footer><span>results are legally binding</span><span>no cheating ♡</span><span>10/10 for trying</span></footer>
+{% endblock %}
+
+<script src="{% static 'relationship/js/v2.js' %}"></script>
+
+{% block scripts %}
+<script src="{% static 'relationship/js/quiz.js' %}"></script>
+{% endblock %}
+
+</body>
+</html>

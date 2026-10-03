@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Places ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'relationship/css/style.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+<nav class="nav">
+<a class="logo" href="{% url 'relationship:indexpage' %}">us<span>♡</span></a>
+<div class="nav-links">
+<a href="{% url 'relationship:indexpage' %}">home</a>
+<a href="{% url 'relationship:story' %}">story</a>
+<a href="{% url 'relationship:scrapbook' %}">scrapbook</a>
+<a class="active" href="{% url 'relationship:places' %}">places</a>
+<a href="{% url 'relationship:cinema' %}">movie</a>
+<a href="{% url 'relationship:jokes' %}">jokes</a>
+<a href="{% url 'relationship:play' %}">play</a>
+<a href="{% url 'relationship:letters' %}">letters</a>
+<a href="{% url 'relationship:future' %}">future</a>
+</div>
+</nav>
+<button class="secret-object secret-heart" id="secretHeart" title="definitely ordinary decoration">♡</button>
+<button class="secret-object secret-star" id="secretStar" title="nothing here">✦</button>
+
+<main class="inner-page">
+<header class="page-header"><p class="eyebrow">our geography</p><h1>places that<br><em>became us.</em></h1><p>Every pin is a memory. Coordinates can be added through Django Admin.</p></header>
+<section class="map-layout">
+<div id="us-map"></div>
+<div class="place-list">
+{% for place in places %}
+<article class="place-card">
+<b>{{ place.name }}</b>
+{% if place.date %}<small>{{ place.date|date:"d M Y" }}</small>{% endif %}
+<p>{{ place.description }}</p>
+</article>
+{% empty %}
+<article class="place-card"><b>No places yet.</b><p>Add a place in the admin panel. For latitude/longitude, use the coordinates of the location you want to remember.</p></article>
+{% endfor %}
+</div>
+</section>
+</main>
+<footer><span>map of us</span><span>distance is just geography ♡</span><span>∞</span></footer>
+
+{{ places_json|json_script:"places-data" }}
+
+<script src="{% static 'relationship/js/v2.js' %}"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const places = JSON.parse(document.getElementById('places-data').textContent);
+const map = L.map("us-map").setView([22.9734, 78.6569], 5);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 19,
+  attribution: "© OpenStreetMap"
+}).addTo(map);
+
+const bounds = [];
+places.forEach(p => {
+  if (p.lat === null || p.lng === null) return;
+  const m = L.marker([p.lat, p.lng]).addTo(map).bindPopup("<b>" + p.name + "</b><br>" + p.desc);
+  bounds.push([p.lat, p.lng]);
+});
+if (bounds.length) map.fitBounds(bounds, { padding: [30, 30] });
+</script>
+</body>
+</html>

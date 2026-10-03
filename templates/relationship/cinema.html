@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>{% block title %}Our Little World ♡{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'relationship/css/style.css' %}">
+{% block extra_head %}{% endblock %}
+</head>
+<body>
+<nav class="nav">
+<a class="logo" href="{% url 'relationship:indexpage' %}">us<span>♡</span></a>
+<div class="nav-links">
+<a href="{% url 'relationship:indexpage' %}">home</a>
+<a href="{% url 'relationship:story' %}">story</a>
+<a href="{% url 'relationship:scrapbook' %}">scrapbook</a>
+<a href="{% url 'relationship:places' %}">places</a>
+<a href="{% url 'relationship:cinema' %}">movie</a>
+<a href="{% url 'relationship:jokes' %}">jokes</a>
+<a href="{% url 'relationship:play' %}">play</a>
+<a href="{% url 'relationship:letters' %}">letters</a>
+<a href="{% url 'relationship:future' %}">future</a>
+</div>
+</nav>
+<button class="secret-object secret-heart" id="secretHeart" title="definitely ordinary decoration">♡</button>
+<button class="secret-object secret-star" id="secretStar" title="nothing here">✦</button>
+
+<script src="{% static 'relationship/js/v2.js' %}"></script>
+{% block scripts %}{% endblock %}
+
+{% block content %}
+<main class="inner-page">
+<header class="page-header"><p class="eyebrow">lights down</p><h1>our little<br><em>movie.</em></h1><p>A proper anniversary montage should feel like an event, not just another video embedded on a page.</p></header>
+<section class="movie-shell">
+<video controls preload="metadata" poster="{% static 'relationship/photos/movie-poster.jpg' %}">
+<source src="{% static 'relationship/videos/anniversary-montage.mp4' %}" type="video/mp4">
+Your browser does not support this video.
+</video>
+<div class="movie-note"><p class="eyebrow">the credits</p><h2>Starring: you + me</h2><p>Drop your real montage at <code>static/relationship/videos/anniversary-montage.mp4</code>.</p></div>
+</section>
+</main>
+<footer><span>now showing</span><span>one audience member required ♡</span><span>∞</span></footer>
+{% endblock %}
+
+</body>
+</html>
