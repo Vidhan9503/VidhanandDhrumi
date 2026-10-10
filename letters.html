@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Open When ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/relationship/css/style.css?v=20261004">
+<link rel="stylesheet" href="static/relationship/css/letters.css?v=1">
+<link rel="stylesheet" href="static/relationship/css/fit.css?v=1">
+
+<script src="static/relationship/js/site-config.js"></script>
+<script src="static/relationship/js/site-core.js"></script>
+<script>SiteCore.guard();</script>
+</head>
+<body class="lt-body">
+<nav class="nav">
+<a class="logo" href="index.html">V&amp;D</a>
+<div class="nav-links">
+<a href="index.html">home</a>
+<a href="scrapbook.html">scrapbook</a>
+<a href="cinema.html">movie</a>
+<a class="active" href="letters.html">letters</a>
+</div></nav>
+
+<main class="lt-shell">
+  <header class="lt-hero">
+    <p class="eyebrow">from my side of the distance</p>
+    <h1>open <em>when...</em></h1>
+    <p>Little envelopes for the days I can't be there in person. Pick the one that matches your mood.</p>
+  </header>
+
+  <div class="lt-tools">
+    <input class="lt-search" id="ltSearch" type="search" placeholder="search a feeling…" aria-label="Search letters" autocomplete="off">
+    <button class="lt-add" id="ltNew" type="button">＋ write a new letter</button>
+  </div>
+  <p class="lt-count" id="ltCount">&nbsp;</p>
+
+  <section class="lt-grid" id="ltGrid">
+  </section>
+  <p class="lt-nomatch" id="ltNoMatch" hidden>no envelope matches that feeling… yet ♡</p>
+</main>
+
+<!-- read -->
+<div class="lt-modal" id="ltRead" aria-hidden="true">
+  <div class="lt-card lt-paper" role="dialog" aria-modal="true">
+    <button class="lt-x" type="button" data-lt-close aria-label="Close">×</button>
+    <div class="lt-read-emoji" id="ltReadEmoji">💌</div>
+    <p class="eyebrow" id="ltReadTrigger"></p>
+    <h2 id="ltReadTitle"></h2>
+    <div class="lt-body-text" id="ltReadBody"></div>
+    <span class="lt-sign">love, your favourite person ♡</span>
+  </div>
+</div>
+
+<!-- write / edit -->
+<div class="lt-modal" id="ltSheet" aria-hidden="true">
+  <div class="lt-card lt-sheet" role="dialog" aria-modal="true">
+    <button class="lt-x" type="button" data-lt-close aria-label="Close">×</button>
+    <p class="eyebrow" id="ltSheetKicker">make another little envelope</p>
+    <h2 id="ltSheetTitle">write a <em>letter.</em></h2>
+    <form id="ltForm" class="lt-form" onsubmit="return false" action="letters.html" data-create-url="letters.html">
+      <div class="lt-row lt-row-emoji"><label>Title<input name="title" maxlength="200" placeholder="open when you miss me" required></label><label>Emoji<input name="emoji" maxlength="20" value="💌"></label></div>
+      <label>When should she open it?<input name="trigger" maxlength="200" placeholder="when today feels a little too much" required></label>
+      <div class="lt-row"><label>Unlock date (optional)<input type="date" name="unlock_date"></label><label>Locked message<input name="locked_message" maxlength="300" value="Not yet, impatient human."></label></div>
+      <label>Your letter<textarea name="content" placeholder="Write anything. A story, a reminder, something silly, something she needs to hear..." required></textarea></label>
+      <button class="lt-save" type="submit" id="ltSave">seal this letter ♡</button>
+    </form>
+  </div>
+</div>
+
+<!-- delete confirm -->
+<div class="lt-modal" id="ltConfirm" aria-hidden="true">
+  <div class="lt-card lt-sheet lt-small" role="alertdialog" aria-modal="true">
+    <div class="lt-read-emoji">🗑️</div>
+    <h2>tear up this letter?</h2>
+    <p id="ltConfirmName" class="lt-confirm-name"></p>
+    <p class="lt-confirm-note">This can't be undone.</p>
+    <form id="ltDelForm" onsubmit="return false">
+      <div class="lt-confirm-row">
+        <button type="button" class="lt-ghost" data-lt-close>keep it</button>
+        <button type="submit" class="lt-danger">yes, delete</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<footer><span>sealed with a kiss</span><span>do not read all at once</span><span>♡</span></footer>
+
+<script src="data/letters-data.js"></script>
+<script src="static/relationship/js/letters-page.js?v=1"></script>
+</body></html>

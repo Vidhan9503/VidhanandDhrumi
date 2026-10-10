@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Scrapbook ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/relationship/css/style.css?v=20261008">
+<link rel="stylesheet" href="static/relationship/css/scrapbook-book.css?v=2">
+
+<script src="static/relationship/js/site-config.js"></script>
+<script src="static/relationship/js/site-core.js"></script>
+<script>SiteCore.guard();</script>
+</head>
+<body class="sb-body">
+<nav class="nav">
+  <a class="logo" href="index.html">V&amp;D</a>
+  <div class="nav-links">
+    <a href="index.html">home</a>
+    <a href="scrapbook.html">scrapbook</a>
+    <a href="cinema.html">movie</a>
+    <a href="letters.html">letters</a>
+  </div>
+</nav>
+
+<main class="sb-shell">
+  <header class="sb-intro">
+    <p class="eyebrow">the little book of us</p>
+    <h1>Our <em>scrapbook.</em></h1>
+    <p>A slightly messy, very cute collection of the moments I never want us to forget.</p>
+  </header>
+
+  <section class="sb-room" aria-label="Digital scrapbook">
+    <div class="sb-sparkles" aria-hidden="true"><span>✨</span><span>🌸</span><span>♡</span><span>🦋</span><span>✦</span><span>🍓</span><span>💌</span></div>
+
+    <button class="sb-arrow sb-arrow-prev" id="sbPrev" aria-label="Previous page" type="button">‹</button>
+    <button class="sb-arrow sb-arrow-next" id="sbNext" aria-label="Next page" type="button">›</button>
+
+    <div class="sb-stage" id="sbStage">
+      <div class="sb-book" id="sbBook" data-state="closed">
+        <div class="sb-shadow"></div>
+
+        <div class="sb-backboard" aria-hidden="true"><i>♡</i><em>made with too much love</em></div>
+        <div class="sb-edge sb-edge-l" aria-hidden="true"></div>
+        <div class="sb-edge sb-edge-r" aria-hidden="true"></div>
+        <div class="sb-gutter" aria-hidden="true"></div>
+
+        <div id="sbLeaves">
+          <!-- leaf 0 is the cover. The page leaves are built by scrapbook-book.js -->
+          <div class="sb-leaf sb-leaf-cover" id="sbCoverLeaf">
+            <div class="sb-face sb-front sb-cover-front" id="sbCover" role="button" tabindex="0" aria-label="Open the scrapbook">
+              <div class="sb-cloth"></div>
+              <div class="sb-hinge"></div>
+              <i class="sb-gcorner sb-gc-tr"></i><i class="sb-gcorner sb-gc-br"></i>
+              <div class="sb-cover-frame">
+                <div class="sb-cover-in">
+                  <div class="sb-cover-top">· volume one ·</div>
+                  <div class="sb-cover-title sb-foil"><small>the little book</small><b>of us</b></div>
+                  <div class="sb-cover-photo">
+                    <span class="sb-tape"></span>
+                    <div class="sb-ph" id="sbCoverPhoto" data-cover="static/relationship/img/cover.jpg">♡</div>
+                  </div>
+                  <div class="sb-cover-names"><span id="sbNames">Us</span></div>
+                  <div class="sb-cover-open">open me ♡</div>
+                </div>
+              </div>
+              <span class="sb-cstick sb-cs1">🌷</span><span class="sb-cstick sb-cs2">💌</span>
+              <span class="sb-cstick sb-cs3">✨</span><span class="sb-cstick sb-cs4">🦋</span>
+              <i class="sb-ribbon"></i>
+            </div>
+            <div class="sb-face sb-back sb-endpaper" aria-hidden="true">
+              <div class="sb-plate"><small>ex libris</small><p>this little book belongs to</p><b><span id="sbName2">Us</span></b><span>handle with love · read with snacks</span></div>
+              <span class="sb-estick" style="left:9cqw;top:10cqw">🌸</span>
+              <span class="sb-estick" style="right:10cqw;top:16cqw;animation-delay:-1.4s">🦋</span>
+              <span class="sb-estick" style="left:12cqw;bottom:14cqw;animation-delay:-2.2s">🍓</span>
+              <span class="sb-estick" style="right:9cqw;bottom:11cqw;animation-delay:-3s">✨</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sb-controls">
+      <button class="sb-btn" id="sbPrev2" aria-label="Previous page" type="button">←</button>
+      <div class="sb-progress" id="sbProgress">cover</div>
+      <button class="sb-btn" id="sbNext2" aria-label="Next page" type="button">→</button>
+      <select class="sb-select" id="sbJump" aria-label="Jump to a page"><option value="">jump to…</option></select>
+      <button class="sb-pill" id="openMemoryModal" type="button"><span>＋</span> Add Memory</button>
+      <button class="sb-pill" id="sbSound" type="button" aria-pressed="false" title="page-turn sound">🔈</button>
+    </div>
+    <p class="sb-hint">tip: tap the right page to turn forward, the left page to go back · or use ← → and swipe ♡</p>
+  </section>
+
+  <section class="sb-tip">
+    <span>✂</span>
+    <div><b>Our rule:</b> no perfect photos required. Blurry, silly, badly timed, accidentally beautiful — they all belong here.</div>
+    <span>♡</span>
+  </section>
+</main>
+
+<!-- The pages. The script moves them into the book, two to a sheet. -->
+<div id="sbSource" hidden></div>
+
+<div class="sb-light" id="sbLight" aria-hidden="true"><figure><img id="sbLightImg" alt=""><figcaption id="sbLightCap"></figcaption></figure></div>
+
+<div class="memory-modal" id="memoryModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="memory-card" role="dialog" aria-modal="true" aria-labelledby="memoryTitle">
+    <button class="modal-close" data-close-modal aria-label="Close" type="button">×</button>
+    <div class="modal-flower">✿</div>
+    <p class="eyebrow">paste a new memory</p>
+    <h2 id="memoryTitle">Add something <em>lovely.</em></h2>
+    <p class="modal-subtitle">Pick a page to add photos, a caption or a note to, or type <b id="sbNextNum">26</b> to start a brand-new page. The book grows with you.</p>
+    <form id="memoryForm" class="memory-form" onsubmit="return false">
+      <div class="form-grid">
+        <label>Page<input type="number" name="page_number" min="1" value="26" required></label>
+        <label>Page title<input name="title" maxlength="200" placeholder="e.g. Our Goa weekend"></label>
+        <label>Date<input type="date" name="date"></label>
+      </div>
+      <label>Little subtitle<input name="subtitle" maxlength="300" placeholder="where we laughed way too much"></label>
+      <label>Write a tiny note<textarea name="note" rows="2" placeholder="A sentence you want future-us to find…"></textarea></label>
+      <label class="upload-label">Photos <small>up to 4</small><input id="memoryPhotos" type="file" name="photos" accept="image/*" multiple><span class="upload-box">📎 <b>choose your favourite photos</b><small>you can select up to four</small></span></label>
+      <div id="photoCaptionFields" class="caption-fields"></div>
+      <button class="save-memory" type="submit">stick it into our book <span>♡</span></button>
+    </form>
+  </div>
+</div>
+
+<footer><span>museum hours: always open</span><span>please don't touch the exhibits ♡</span><span>∞</span></footer>
+<script src="data/scrapbook-data.js"></script>
+<script src="static/relationship/js/scrapbook-store.js?v=1"></script>
+
+</body>
+</html>

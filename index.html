@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Just Us ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/relationship/css/style.css?v=20261007">
+<link rel="stylesheet" href="static/relationship/css/gate-fun.css?v=1">
+<link rel="stylesheet" href="static/relationship/css/fit.css?v=1">
+<script src="static/relationship/js/site-config.js"></script>
+<script src="static/relationship/js/site-core.js"></script>
+<script>
+  // Decide gate vs. site before first paint, so the wrong one never flashes.
+  (function () {
+    var C = SiteCore;
+    if (!C.isUnlocked() && C.passwordOk() && C.birthdayReached()) C.unlock(true);
+    var unlocked = C.isUnlocked();
+    document.documentElement.setAttribute('data-state', unlocked ? 'site' : 'gate');
+  })();
+</script>
+<style>
+  html[data-state="gate"] #siteRoot, html[data-state="site"] #gateRoot { display: none; }
+</style>
+</head>
+<body>
+
+<!-- ═════════════ THE GATE (shown until the right password + birthday) ═════════════ -->
+<div id="gateRoot">
+<main class="website-gate" id="websiteGate" data-show-questions="true" data-show-countdown="true">
+  <div class="gate-sprinkles" aria-hidden="true">♡ ✦ ୨୧ ✿ ♡</div>
+
+  <div data-gate-gifs>
+  <div class="gate-gif gate-gif-1" data-gif="1" tabindex="0" role="button" aria-label="A tiny cat friend">
+    <div class="gif-frame"><iframe src="https://giphy.com/embed/KztT2c4u8mYYUiMKdJ" frameborder="0" allowfullscreen title="cute cat"></iframe><span class="gif-shine"></span></div>
+    <span class="gif-tag">little supervisor</span><span class="gif-whisper">pspsps… ♡</span>
+  </div>
+  <div class="gate-gif gate-gif-2" data-gif="2" tabindex="0" role="button" aria-label="A tiny love friend">
+    <div class="gif-frame"><iframe src="https://giphy.com/embed/s6Ru4Jpl7EJkjyjq75" frameborder="0" allowfullscreen title="cute love animation"></iframe><span class="gif-shine"></span></div>
+    <span class="gif-tag">certified us</span><span class="gif-whisper">come closer…</span>
+  </div>
+  <div class="gate-gif gate-gif-3" data-gif="3" tabindex="0" role="button" aria-label="A little affectionate animation">
+    <div class="gif-frame"><iframe src="https://giphy.com/embed/ewginQ7Ny9BXSElV0m" frameborder="0" allowfullscreen title="love animation"></iframe><span class="gif-shine"></span></div>
+    <span class="gif-tag">one tiny hug</span><span class="gif-whisper">♡♡♡</span>
+  </div>
+  <div class="gate-gif gate-gif-4" data-gif="4" tabindex="0" role="button" aria-label="A playful animation">
+    <div class="gif-frame"><iframe src="https://giphy.com/embed/iUYkb29OtCeOgsnhnI" frameborder="0" allowfullscreen title="playful animation"></iframe><span class="gif-shine"></span></div>
+    <span class="gif-tag">me being annoying</span><span class="gif-whisper">hehe. got you.</span>
+  </div>
+  <div class="gate-gif gate-gif-5" data-gif="5" tabindex="0" role="button" aria-label="A gentle love animation">
+    <div class="gif-frame"><iframe src="https://giphy.com/embed/g9wyTh6aWsCGzu4NgY" frameborder="0" allowfullscreen title="gentle love animation"></iframe><span class="gif-shine"></span></div>
+    <span class="gif-tag">for you, obviously</span><span class="gif-whisper">stay here a sec ♡</span>
+  </div>
+  </div>
+
+  <section class="gate-card" aria-label="Private website entrance">
+    <div class="gate-tape"></div>
+    <div class="gate-postmark">FOR TWO<br><b>ONLY</b></div>
+    <div class="gate-lock-wrap">
+      <div class="gate-lock" id="gateLock" aria-hidden="true"><span class="lock-shackle"></span><span class="lock-body">♡</span></div>
+      <span class="lock-spark spark-a">✦</span><span class="lock-spark spark-b">♡</span><span class="lock-spark spark-c">✿</span>
+    </div>
+    <div class="gate-badge">a tiny door to our world</div>
+
+    <div class="gate-intro">
+      <p class="gate-label">first, prove you're my favourite person</p>
+      <p class="gate-subline" data-gate-form-only>four little numbers · then we wait together</p>
+      <p class="gate-subline password-saved" data-gate-memory-only>✓ password remembered · now we wait together ♡</p>
+    </div>
+
+    <div class="gate-countdown-wrap" data-gate-countdown>
+      <p class="countdown-kicker" id="gateKicker">the door opens on</p>
+      <div class="birthday-date-ribbon"><span id="gateRibbonDay">20</span><b id="gateRibbonMonth">October</b><span id="gateRibbonYear">2026</span></div>
+      <div class="gate-countdown" id="birthdayCountdown" aria-live="polite">
+        <div class="time-piece"><strong id="gateDays">00</strong><span>days</span></div><b>:</b>
+        <div class="time-piece"><strong id="gateHours">00</strong><span>hrs</span></div><b>:</b>
+        <div class="time-piece"><strong id="gateMinutes">00</strong><span>min</span></div><b>:</b>
+        <div class="time-piece"><strong id="gateSeconds">00</strong><span>sec</span></div>
+      </div>
+      <p class="gate-date" id="gateDateMessage">until your birthday ♡</p>
+      <div class="tick-line"><span></span><i>every second is one second closer</i><span></span></div>
+    </div>
+
+    <section class="love-quiz" id="loveQuiz" aria-label="A few important questions">
+      <div class="quiz-pips" id="quizPips" aria-hidden="true"></div>
+      <p class="quiz-q" id="quizQ"></p>
+      <div class="quiz-arena" id="quizArena"></div>
+      <p class="quiz-hint" id="quizHint" aria-live="polite"></p>
+    </section>
+
+    <div class="gate-divider" data-gate-form-only><span>our little number</span></div>
+    <form class="gate-form" data-gate-form-only autocomplete="off" onsubmit="return false">
+      <input type="hidden" name="password" id="gatePassword" value="">
+      <div class="gate-password-dots" aria-label="Four digit password"><span></span><span></span><span></span><span></span></div>
+      <p class="gate-message" id="gateMessage">tap the numbers · I trust you ♡</p>
+      <div class="gate-keypad" aria-label="Password keypad">
+        <button type="button" data-gate-key="1">1</button><button type="button" data-gate-key="2">2</button><button type="button" data-gate-key="3">3</button>
+        <button type="button" data-gate-key="4">4</button><button type="button" data-gate-key="5">5</button><button type="button" data-gate-key="6">6</button>
+        <button type="button" data-gate-key="7">7</button><button type="button" data-gate-key="8">8</button><button type="button" data-gate-key="9">9</button>
+        <button type="button" class="gate-key-word" data-gate-action="clear">clear</button>
+        <button type="button" data-gate-key="0">0</button>
+        <button type="button" class="gate-key-heart" data-gate-action="backspace">♡</button>
+      </div>
+      <p class="gate-note" id="gateHint">hint: ♡</p>
+    </form>
+
+    <div class="password-memory-card" data-gate-memory-only>
+      <span class="memory-heart">♡</span>
+      <p><b>I remember.</b><br>you don't have to type it again.</p>
+      <small id="gateMemoryNote">now just wait for the clock to hit zero.</small>
+    </div>
+
+    <div class="gate-footer-doodle"><span>♡</span><i>made for one very specific person</i><span>♡</span></div>
+  </section>
+
+  <p class="gate-bottom-note">nothing else exists until the little door opens · and yes, I'm making you wait ♡</p>
+</main>
+</div>
+
+<!-- ═════════════ THE SITE (shown once unlocked) ═════════════ -->
+<div id="siteRoot">
+<nav class="nav">
+<a class="logo" href="index.html">V&amp;D</a>
+<div class="nav-links">
+<a href="index.html">home</a>
+<a href="scrapbook.html">scrapbook</a>
+<a href="cinema.html">movie</a>
+<a href="letters.html">letters</a>
+</div>
+</nav>
+<button class="secret-object secret-heart" id="secretHeart" title="definitely ordinary decoration">♡</button>
+<button class="secret-object secret-star" id="secretStar" title="nothing here">✦</button>
+
+<main>
+<section class="hero">
+<div>
+<p class="eyebrow">a tiny internet corner that belongs to us</p>
+<h1>our<br><em>little world.</em></h1>
+<div class="hero-buttons"><button class="btn btn-dark" id="surpriseBtn">surprise me ✦</button></div>
+</div>
+<div class="hero-polaroid">
+<img class="feature-photo" src="static/relationship/img/home.jpg" alt="Us"><p>proof that we were here ♡</p>
+<span class="hero-sticker sticker-one">still choosing you ✦</span>
+</div>
+<span class="hero-sticker sticker-two">long distance<br>but never far</span>
+</section>
+
+<section class="counter-section">
+<div class="counter-card">
+<p class="eyebrow">how long we've been us</p>
+<div class="counter"><div><strong id="years">00</strong><span>years</span></div><div><strong id="days">00</strong><span>days</span></div><div><strong id="hours">00</strong><span>hours</span></div><div><strong id="minutes">00</strong><span>minutes</span></div></div>
+<p class="counter-note">and counting. obviously.</p>
+</div>
+</section>
+
+<section class="section cards-section">
+<div class="section-heading"><div><p class="eyebrow">the important stuff</p><h2>go<br><em>exploring.</em></h2></div></div>
+<div class="cute-grid">
+<a class="cute-card pink" href="scrapbook.html"><span class="card-number">01</span><span class="card-icon">📸</span><h3>scrapbook</h3><p>Photos, captions, places and tiny pieces of ordinary life.</p><span class="arrow">↗</span></a>
+<a class="cute-card blue" href="cinema.html"><span class="card-number">02</span><span class="card-icon">🎞️</span><h3>our movie</h3><p>Lights down. Volume up. The anniversary montage gets its own premiere.</p><span class="arrow">↗</span></a>
+<a class="cute-card green" href="letters.html"><span class="card-number">03</span><span class="card-icon">💌</span><h3>open when</h3><p>Letters for missing me, bad days, sleepless nights and future anniversaries.</p><span class="arrow">↗</span></a>
+</div>
+</section>
+
+<section class="quote-section"><div class="quote-mark">“</div><blockquote>In every version of my life I've imagined so far, somehow you're still there.</blockquote><p>— me, being disgustingly sentimental</p></section>
+
+<section class="section mini-moments">
+<div class="section-heading"><div><p class="eyebrow">tiny things</p><h2>things I love<br><em>about you.</em></h2></div></div>
+<div class="reasons">
+<div class="reason"><b>01</b><span>the way you say my name when you're pretending to be annoyed</span></div>
+<div class="reason"><b>02</b><span>how one conversation with you can fix an entire bad day</span></div>
+<div class="reason"><b>03</b><span>your extremely specific opinions about extremely unimportant things</span></div>
+<div class="reason"><b>04</b><span>that somehow, even after three years, I still have new things to learn about you</span></div>
+</div>
+</section>
+
+<section class="final-note"><div class="scribble">p.s.</div><h2>this website is going to<br><em>keep growing.</em></h2><p>Next year we'll add more memories. Then more. Eventually this place will be embarrassingly full.</p><span class="heart-line">♡ — ♡ — ♡</span></section>
+</main>
+
+<div class="modal" id="surpriseModal"><div class="modal-box"><button class="close" data-close>×</button><div class="modal-emoji" id="surpriseEmoji">💌</div><p class="eyebrow">surprise</p><h2 id="surpriseText">You are my favourite notification.</h2><p>Okay, now go look around. I definitely hid something somewhere.</p></div></div>
+
+<div class="birthday-overlay" id="birthdayOverlay">
+<div class="birthday-card">
+<div class="big-heart">♡</div><p class="eyebrow">birthday mode</p>
+<h1>happy birthday,<br><em>my favourite person.</em></h1>
+<p>Today the ordinary homepage gets replaced by something a little more ridiculous.</p>
+<button class="btn btn-dark" id="enterBirthday">enter your birthday world →</button>
+</div>
+</div>
+
+<footer><span>made with too much love</span><span>for two people &amp; nobody else ♡</span><span>2026 → ∞</span></footer>
+</div>
+
+<script>
+(function () {
+  const C = SiteCore, S = SiteCore.config;
+  const $ = s => document.querySelector(s);
+  const unlocked = document.documentElement.dataset.state === 'site';
+
+  /* ───────── UNLOCKED: the home page ───────── */
+  if (unlocked) {
+    $('#gateRoot').remove();
+    document.body.className = '';
+    C.takeFlag('just_unlocked');
+    window.RELATIONSHIP_START = S.relationshipStart;
+    window.BIRTHDAY_DATE = S.birthday;
+    window.ANNIVERSARY_DATE = S.anniversary;
+
+    // Hidden clickable objects
+    const modal = $('#surpriseModal');
+    function say(emoji, text) { $('#surpriseEmoji').textContent = emoji; $('#surpriseText').textContent = text; modal.classList.add('show'); }
+    $('#secretHeart').addEventListener('click', () => say('💋', 'You found it. Your reward: one extremely dramatic kiss.'));
+    $('#secretStar').addEventListener('click', () => say('✨', 'Nothing here. (There is definitely something here. I love you.)'));
+
+    // Birthday mode: on the birthday itself (India time), once per visit
+    const ist = d => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(d);
+    let seen = false; try { seen = sessionStorage.getItem('birthdayShown') === '1'; } catch (e) {}
+    if (ist(new Date()) === S.birthday && !seen) {
+      $('#birthdayOverlay').classList.add('show');
+      try { sessionStorage.setItem('birthdayShown', '1'); } catch (e) {}
+    }
+    $('#enterBirthday').addEventListener('click', () => $('#birthdayOverlay').classList.remove('show'));
+
+    // bfcache: a restored page without an unlock goes back to the gate
+    addEventListener('pageshow', e => { if (e.persisted && !C.isUnlocked()) location.reload(); });
+    return;
+  }
+
+  /* ───────── LOCKED: the gate ───────── */
+  $('#siteRoot').remove();
+  document.body.className = 'gate-body lockscreen-' + S.lockscreenVariant;
+  const passwordOk = C.passwordOk();
+  const birthdayReached = C.birthdayReached();
+  const wrong = C.takeFlag('gate_wrong');
+
+  const gate = $('#websiteGate');
+  gate.dataset.showQuestions = String(!!S.showQuestions);
+  gate.dataset.showCountdown = String(!!S.showCountdown);
+  if (!S.showGifs) document.querySelector('[data-gate-gifs]').remove();
+  if (!S.showCountdown) document.querySelector('[data-gate-countdown]').remove();
+  if (!S.showQuestions) $('#loveQuiz').classList.add('is-disabled');
+  document.querySelectorAll(passwordOk ? '[data-gate-form-only]' : '[data-gate-memory-only]').forEach(e => e.remove());
+  const hint = $('#gateHint'); if (hint) hint.textContent = 'hint: ' + S.passwordHint + ' ♡';
+
+  const target = new Date(S.birthday + 'T00:00:00+05:30');
+  const kicker = $('#gateKicker');
+  if (kicker) kicker.textContent = birthdayReached ? 'birthday mode is open ♡' : 'the door opens on';
+  const note = $('#gateMemoryNote');
+  if (note) note.textContent = birthdayReached ? 'the little door is open — welcome back ♡' : 'now just wait for the clock to hit zero.';
+  if ($('#gateRibbonDay')) {
+    const parts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Kolkata', day: 'numeric', month: 'long', year: 'numeric' }).formatToParts(target);
+    const g = t => (parts.find(p => p.type === t) || {}).value || '';
+    $('#gateRibbonDay').textContent = g('day'); $('#gateRibbonMonth').textContent = g('month'); $('#gateRibbonYear').textContent = g('year');
+  }
+
+  const form = $('.gate-form');
+  const hidden = $('#gatePassword');
+  const dots = [...document.querySelectorAll('.gate-password-dots span')];
+  const message = $('#gateMessage');
+  const lock = $('#gateLock');
+  if (message && wrong) { message.textContent = "hmm… that wasn't our little number. try again ♡"; message.dataset.wrong = '1'; }
+  let value = '';
+
+  function pad(n) { return String(Math.max(0, n)).padStart(2, '0'); }
+  function tick(id, next) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const nextText = pad(next);
+    if (el.textContent !== nextText) { el.classList.remove('tick'); void el.offsetWidth; el.classList.add('tick'); }
+    el.textContent = nextText;
+  }
+  function countdown() {
+    if (!document.getElementById('birthdayCountdown')) return;
+    const diff = target.getTime() - Date.now();
+    if (diff <= 0) {
+      ['gateDays', 'gateHours', 'gateMinutes', 'gateSeconds'].forEach(id => tick(id, 0));
+      gate.classList.add('gate-ready');
+      document.querySelector('.gate-label').textContent = 'the little door is open ♡';
+      document.getElementById('gateDateMessage').textContent = 'happy birthday, my favourite person';
+      if (passwordOk) setTimeout(() => window.location.reload(), 700);
+      return;
+    }
+    const total = Math.floor(diff / 1000);
+    tick('gateDays', Math.floor(total / 86400));
+    tick('gateHours', Math.floor((total % 86400) / 3600));
+    tick('gateMinutes', Math.floor((total % 3600) / 60));
+    tick('gateSeconds', total % 60);
+  }
+  countdown();
+  setInterval(countdown, 1000);
+
+  // This is what the server's POST used to do.
+  function submitPassword() {
+    if (C.checkPassword(value)) {
+      C.rememberPassword();
+      if (C.birthdayReached()) C.unlock(true);
+      location.reload();
+    } else {
+      C.flag('gate_wrong');
+      location.reload();
+    }
+  }
+
+  if (form) {
+    function render() { hidden.value = value; dots.forEach((dot, i) => dot.classList.toggle('filled', i < value.length)); }
+    function addDigit(d) {
+      if (value.length >= 4) return;
+      value += d; render();
+      if (message) message.textContent = value.length === 4 ? 'checking our little secret… ♡' : '♡';
+      if (value.length === 4) { lock.classList.add('is-trying'); setTimeout(submitPassword, 260); }
+    }
+    document.querySelectorAll('[data-gate-key]').forEach(btn => btn.addEventListener('click', () => addDigit(btn.dataset.gateKey)));
+    document.querySelector('[data-gate-action="clear"]').addEventListener('click', () => { value = ''; render(); });
+    document.querySelector('[data-gate-action="backspace"]').addEventListener('click', () => { value = value.slice(0, -1); render(); });
+    document.addEventListener('keydown', e => {
+      if (/^\d$/.test(e.key)) addDigit(e.key);
+      if (e.key === 'Backspace') { value = value.slice(0, -1); render(); }
+      if (e.key === 'Escape') { value = ''; render(); }
+    });
+  }
+
+  // The GIFs behave like little living stickers rather than pasted embeds.
+  const friends = [...document.querySelectorAll('.gate-gif')];
+  function reactToPointer(x, y) {
+    friends.forEach(card => {
+      const r = card.getBoundingClientRect(), cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+      const d = Math.hypot(x - cx, y - cy);
+      if (d < 240) {
+        const strength = Math.max(0, 1 - d / 240);
+        card.style.setProperty('--px', `${((cx - x) / 240) * 22 * strength}px`);
+        card.style.setProperty('--py', `${((cy - y) / 240) * 22 * strength}px`);
+        card.classList.add('near');
+      } else card.classList.remove('near');
+    });
+  }
+  window.addEventListener('pointermove', e => reactToPointer(e.clientX, e.clientY), { passive: true });
+  friends.forEach(card => {
+    const activate = () => {
+      card.classList.remove('poked'); void card.offsetWidth; card.classList.add('poked');
+      const whisper = card.querySelector('.gif-whisper');
+      if (whisper) whisper.classList.add('show');
+      setTimeout(() => whisper && whisper.classList.remove('show'), 1100);
+    };
+    card.addEventListener('pointerdown', activate);
+    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); } });
+  });
+})();
+</script>
+<!-- these only act on elements that exist in the current state (gate or site) -->
+<script src="static/relationship/js/gate-fun.js?v=1"></script>
+<script src="static/relationship/js/countdown.js"></script>
+<script src="static/relationship/js/main.js"></script>
+</body>
+</html>
