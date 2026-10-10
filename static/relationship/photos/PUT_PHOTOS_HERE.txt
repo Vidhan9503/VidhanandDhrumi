@@ -1,1 +1,0 @@
-Upload photos through Django Admin for dynamic memories. Optional movie-poster.jpg can be placed here.
