@@ -23,21 +23,13 @@ window.SCRAPBOOK_PAGES = [
   },
   {
     "page": 3,
-    "title": "abcde",
-    "subtitle": "Where we laughed a lot",
+    "title": "Food Dates",
+    "subtitle": "love, but make it delicious",
     "date": null,
-    "note": "Hii",
-    "paper": "sky",
-    "doodle": "☾",
-    "photos": [
-      {
-        "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-08-19_at_8.36.03_PM__Done.png",
-        "caption": "Cutipie",
-        "sticker": "",
-        "rotation": -2.5
-      }
-    ]
+    "note": "For the meals, midnight snacks and 'what should we eat?' debates.",
+    "paper": "cream",
+    "doodle": "✿",
+    "photos": []
   },
   {
     "page": 4,
@@ -51,39 +43,23 @@ window.SCRAPBOOK_PAGES = [
   },
   {
     "page": 5,
-    "title": "efghif",
-    "subtitle": "Where we laughed a lot -2",
-    "date": "2002-01-02",
-    "note": "dffkvmfdkdm",
-    "paper": "sage",
-    "doodle": "♥",
-    "photos": [
-      {
-        "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-08-19_at_8.36.23_PM_-_Done.png",
-        "caption": "Cutipie 1",
-        "sticker": "",
-        "rotation": -2.5
-      }
-    ]
+    "title": "Food Dates",
+    "subtitle": "love, but make it delicious",
+    "date": null,
+    "note": "For the meals, midnight snacks and 'what should we eat?' debates.",
+    "paper": "cream",
+    "doodle": "✿",
+    "photos": []
   },
   {
     "page": 6,
-    "title": "cdcs",
-    "subtitle": "Where we laughed a lot",
-    "date": "2022-02-20",
-    "note": "cdscs",
-    "paper": "blush",
-    "doodle": "♡",
-    "photos": [
-      {
-        "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-08-17_at_12.18.22_AM.png",
-        "caption": "",
-        "sticker": "",
-        "rotation": -2.5
-      }
-    ]
+    "title": "Food Dates",
+    "subtitle": "love, but make it delicious",
+    "date": null,
+    "note": "For the meals, midnight snacks and 'what should we eat?' debates.",
+    "paper": "cream",
+    "doodle": "✿",
+    "photos": []
   },
   {
     "page": 7,
