@@ -3,7 +3,7 @@
 window.SITE = {
   name: "Us",
   relationshipStart: "2023-10-25T21:41:00+05:30",
-  birthday: "2026-10-20",        // YYYY-MM-DD (India time). The site stays shut until this day.
+  birthday: "2026-10-10",        // YYYY-MM-DD (India time). The site stays shut until this day.
   anniversary: "2026-10-25",
 
   // Password gate. Only a hash is stored here, not the number itself.
