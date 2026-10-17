@@ -10,7 +10,7 @@ window.SITE = {
   // To change the password, run in a browser console:  SiteCore.hash("1234")
   // and paste the result below.
   passwordHash: "24528620caeaae91b5f23929f67b39871cffe1e2d72e0350b6f03f7b0933d808",
-  requireBirthday: true,         // false = the right password opens the site immediately
+  requireBirthday: false,         // false = the right password opens the site immediately
 
   // Lockscreen options
   lockscreenVariant: "birthday", // "birthday" or "minimal"
