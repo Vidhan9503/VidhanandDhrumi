@@ -168,7 +168,7 @@ window.SCRAPBOOK_PAGES = [
     "title": "Initial IIT Days",
     "subtitle": "Small wait with Lots of happiness before we met each other",
     "date": null,
-    "note": "Starbucks and Subway had become our spot ❤️🥰”,
+    "note": "Starbucks and Subway had become our spot ❤️🥰",
     "paper": "lilac",
     "doodle": "❀",
     "photos": [
