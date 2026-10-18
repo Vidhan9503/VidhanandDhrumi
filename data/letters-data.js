@@ -9,7 +9,7 @@ window.LETTERS_SEED = [
     "emoji": "💌",
     "unlock_date": null,
     "locked_message": "Not yet, impatient human.",
-    "content": "Hey. I know. I miss you too.\n\nI'm not great at saying this stuff out loud, but I think about you way more than I let on. Random times, too. While eating, while walking, in the middle of doing nothing.\n\nThe distance sucks. I really hate it. But it's not forever, and every day that passes is one day closer to seeing you.\n\nCall me. Even if you have nothing to say. I'll listen to you breathe if I have to."
+    "content": "Hey. I know. I miss you too.\n\nI'm not great at saying this stuff out loud, but I think about you way more than I say. Random times, too. While eating, while walking, in the middle of doing nothing.\n\nThe distance sucks and I really hate it. But it's not forever, and every day that passes is one day closer to seeing you.\n\nCall me. Even if you have nothing to say. I will sure cheer you up"
   },
   {
     "id": 2,
@@ -18,7 +18,7 @@ window.LETTERS_SEED = [
     "emoji": "🌧️",
     "unlock_date": null,
     "locked_message": "Not yet, impatient human.",
-    "content": "Okay, so today was bad. I'm sorry.\n\nI won't tell you it's all going to be fine or that there's a lesson in it. Some days are just bad, that's it.\n\nGo eat something, drink some water, and tell me everything that went wrong. I want to hear all of it, even the small annoying stuff.\n\nI'm on your side. Always. Even if you're the one who's wrong."
+    "content": "Okay, so today was bad. I'm sorry.\n\nI won't tell you it's all going to be fine or that there's a lesson in it. Some days are just bad, that's it.\n\nGo eat something, drink some water, and tell me everything that went wrong. I want to hear all of it, even the small annoying stuff.\n\nI'm on your side. Always. Even if you're the one who's wrong (which is impossible :) )."
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@ window.LETTERS_SEED = [
     "emoji": "🌙",
     "unlock_date": null,
     "locked_message": "Not yet, impatient human.",
-    "content": "Still awake? Me too, probably.\n\nPut your phone down after this. Lie back. Don't try to solve anything right now, it can wait till morning. Honestly, most things look way smaller after sleep.\n\nI wish I could just be next to you so you could stop thinking. Since I can't, just know I'm thinking of you, so you don't have to carry it all alone tonight.\n\nGood night. Sleep well."
+    "content": "Still awake?\n\nPut your phone down after this. Lie back. Don't try to solve anything right now, it can wait till morning. Honestly, most things look way smaller after sleep.\n\nI wish I could just be next to you and cuddle with you,, let all the thoughtd disappear. Since I can't, just know I'm thinking of you, so you don't have to carry it all alone tonight.\n\nGood night. Sleep well."
   },
   {
     "id": 4,
@@ -36,7 +36,7 @@ window.LETTERS_SEED = [
     "emoji": "⭐",
     "unlock_date": null,
     "locked_message": "Not yet, impatient human.",
-    "content": "Reminder, because I don't say it enough: I'm proud of you.\n\nI mean it. I see how hard you try, even when you think nobody's noticing. I notice.\n\nAnd the stuff you think is weird about yourself? I like those parts the most. Don't change them for anyone. Not even me."
+    "content": "Reminder, because I don't say it enough: I'm proud of you.\n\nI mean it. I see how hard you try, even when you think nobody's noticing. I notice.\n\nAnd the stuff you think is dislike about yourself? I like those the most. Don't change them for anyone. Not even for me."
   },
   {
     "id": 5,
@@ -45,7 +45,7 @@ window.LETTERS_SEED = [
     "emoji": "🫂",
     "unlock_date": null,
     "locked_message": "Not yet, impatient human.",
-    "content": "I wish I could hug you right now. Properly, the long kind.\n\nYou don't have to explain why you're sad. You don't have to be okay for me either. Just be sad for a bit, it's allowed.\n\nI'm not going anywhere. If you want to talk, I'm here. If you don't want to talk, I'll just stay on the call and we can be quiet together.\n\nI love you. That's all I really wanted to say."
+    "content": "I wish I could hug you right now. Properly, the long one.\n\nYou don't have to explain why you're sad. You don't have to be okay for me either. Just be sad for a bit, it's allowed.\n\nI'm not going anywhere. If you want to talk, I'm here. If you don't want to talk, I'll just stay on the call and we can be quiet together.\n\nI love you. That's all I really wanted to say."
   },
   {
     "id": 6,
@@ -81,7 +81,7 @@ window.LETTERS_SEED = [
     "emoji": "🕯️",
     "unlock_date": null,
     "locked_message": "Not yet, impatient human.",
-    "content": "I know it feels quiet right now.\n\nBut just so you know, you're never really alone. There's me, thinking about you, wondering what you're up to and if you ate.\n\nGo make some chai or coffee or whatever. Put on a song you like. Then text me. I'll reply. I always do."
+    "content": "I know it feels quiet right now.\n\nBut just so you know, you're never really alone. There's me, thinking about you, wondering what you're up to and if you ate.\n\nGo make some coffee or whatever. Put on a song you like. Then text me. I'll reply. I always do."
   },
   {
     "id": 10,
@@ -144,7 +144,7 @@ window.LETTERS_SEED = [
     "emoji": "📸",
     "unlock_date": null,
     "locked_message": "Not yet, impatient human.",
-    "content": "Remember how all this started? Just a normal hello, and neither of us had any idea.\n\nI think about that sometimes. How something so ordinary turned into the best part of my day.\n\nAll the late calls, the dumb jokes, the arguments over nothing, I'd do all of it again.\n\nThank you for being you. And for putting up with me."
+    "content": "Remember how all this started? Just a casual walk, and neither of us had any idea where it would lead to.\n\nI think about that sometimes. How something so ordinary turned into the best part of my day.\n\nAll the late calls, the dumb jokes, the arguments over nothing, I'd do all of it again.\n\nThank you for being you. And for putting up with me."
   },
   {
     "id": 17,
@@ -162,7 +162,7 @@ window.LETTERS_SEED = [
     "emoji": "💞",
     "unlock_date": "2026-10-25",
     "locked_message": "Patience. This one isn't ready yet.",
-    "content": "Happy anniversary.\n\nAnother year, still together, still annoying each other, still laughing. Honestly, that's more than I could ask for.\n\nThrough all the distance and the time-zone chaos and the waiting, you stayed. Thank you for that.\n\nI'm not going to promise everything will be perfect. But I'm going to keep trying, every day. I love you."
+    "content": "Happy anniversary.\n\nAnother year, still together, still annoying each other, still laughing. Honestly, that's more than I could ask for.\n\nThrough all the distance, chaos and the waiting, you stayed. Thank you for that.\n\nI'm not going to promise everything will be perfect. But I'm going to keep trying, every day. I love you."
   },
   {
     "id": 19,
