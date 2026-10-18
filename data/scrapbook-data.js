@@ -12,7 +12,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/1.jpeg",
         "caption": "The Idiots!!",
         "sticker": "",
         "rotation": -2.5
@@ -30,7 +30,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/2.jpeg",
         "caption": "Big Girl now",
         "sticker": "",
         "rotation": -2.5
@@ -48,7 +48,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/3.jpeg",
         "caption": "Our Little Family!!",
         "sticker": "",
         "rotation": -2.5
@@ -66,7 +66,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/4.jpeg",
         "caption": "Wish Time froze there!!",
         "sticker": "",
         "rotation": -2.5
@@ -84,7 +84,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/5.jpeg",
         "caption": "Feels like yesterday",
         "sticker": "",
         "rotation": -2.5
@@ -102,7 +102,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/6.jpeg",
         "caption": "Just felt perfect!!",
         "sticker": "",
         "rotation": -2.5
@@ -120,7 +120,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/7.jpeg",
         "caption": "Looked super hot",
         "sticker": "",
         "rotation": -2.5
@@ -138,7 +138,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/8.jpeg",
         "caption": "Innocent but not much!!",
         "sticker": "",
         "rotation": -2.5
@@ -156,7 +156,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/9.jpeg",
         "caption": "Little Princess ❤️🥰",
         "sticker": "",
         "rotation": -2.5
@@ -174,7 +174,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/10.jpeg",
         "caption": "Cute as ever!!",
         "sticker": "",
         "rotation": -2.5
@@ -192,7 +192,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/11.jpeg",
         "caption": "",
         "sticker": "",
         "rotation": -2.5
@@ -210,7 +210,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/12.jpeg",
         "caption": "Favourite Person",
         "sticker": "",
         "rotation": -2.5
@@ -228,7 +228,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/13.jpeg",
         "caption": "Just felt different!!",
         "sticker": "",
         "rotation": -2.5
@@ -246,7 +246,7 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/14.jpeg",
         "caption": "Last moments in IIT 🥹",
         "sticker": "",
         "rotation": -2.5
@@ -264,8 +264,27 @@ window.SCRAPBOOK_PAGES = [
     "photos": [
       {
         "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "src": "media/scrapbook/15.jpeg",
         "caption": "Cute Hehehe!!!!",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
+  },
+   
+  {
+    "page": 16,
+    "title": "Day of Placements",
+    "subtitle": "You always put a smile on my face",
+    "date": null,
+    "note": "I always feel loved seeing you put in so much thoughts and effort for me",
+    "paper": "sky",
+    "doodle": "☾",
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/16.jpeg",
+        "caption": "My Biggest Cheerleader",
         "sticker": "",
         "rotation": -2.5
       }
