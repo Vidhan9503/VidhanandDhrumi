@@ -14,7 +14,7 @@ window.SCRAPBOOK_PAGES = [
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
         "caption": "The Idiots!!",
-        "sticker": "The Idiots!!",
+        "sticker": "",
         "rotation": -2.5
       }
     ]
