@@ -3,53 +3,93 @@
 window.SCRAPBOOK_PAGES = [
   {
     "page": 1,
-    "title": "The Beginning",
-    "subtitle": "where our little story starts",
+    "title": "Before the Beginning",
+    "subtitle": "So much drama but still happy to meet you!!",
     "date": null,
-    "note": "The first page of a very long, very lovely story.",
+    "note": "Did not expect, we would end up together",
     "paper": "cream",
     "doodle": "✿",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "The Idiots!!",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 2,
-    "title": "The First Hello",
-    "subtitle": "that tiny moment that mattered",
+    "title": "Happy 18th Birthday!!!",
+    "subtitle": "Too close yet too far",
     "date": null,
-    "note": "Some beginnings are quiet. Ours became everything.",
+    "note": "Looked super cute in it",
     "paper": "butter",
     "doodle": "✦",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "Big Girl now",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 3,
-    "title": "Food Dates",
-    "subtitle": "love, but make it delicious",
+    "title": "Us ❤️❤️❤️",
+    "subtitle": "Perfect!",
     "date": null,
-    "note": "For the meals, midnight snacks and 'what should we eat?' debates.",
+    "note": "Could not have asked for more",
     "paper": "cream",
     "doodle": "✿",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "Our Little Family!!",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 4,
-    "title": "Our Goa weekenf",
-    "subtitle": "",
+    "title": "Good Old Days",
+    "subtitle": "Race Course never disappoints",
     "date": null,
-    "note": "",
+    "note": "Wish to go there again with you",
     "paper": "lilac",
     "doodle": "❀",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "Wish Time froze there!!",
+        "sticker": "Wish Time froze there!!",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 5,
-    "title": "Food Dates",
-    "subtitle": "love, but make it delicious",
+    "title": "Manali Trip ❤️",
+    "subtitle": "Our First Trip",
     "date": null,
-    "note": "For the meals, midnight snacks and 'what should we eat?' debates.",
+    "note": "Too much fun and drama!!",
     "paper": "cream",
     "doodle": "✿",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "Feels like yesterday",
+        "sticker": "Feels like yesterday",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 6,
@@ -59,7 +99,15 @@ window.SCRAPBOOK_PAGES = [
     "note": "For the meals, midnight snacks and 'what should we eat?' debates.",
     "paper": "cream",
     "doodle": "✿",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 7,
@@ -69,7 +117,15 @@ window.SCRAPBOOK_PAGES = [
     "note": "For the meals, midnight snacks and 'what should we eat?' debates.",
     "paper": "cream",
     "doodle": "✿",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 8,
@@ -79,7 +135,15 @@ window.SCRAPBOOK_PAGES = [
     "note": "Birthdays, wins, surprises and everything in between.",
     "paper": "butter",
     "doodle": "✦",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 9,
@@ -89,7 +153,15 @@ window.SCRAPBOOK_PAGES = [
     "note": "The photos that need zero context.",
     "paper": "sky",
     "doodle": "☾",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 10,
@@ -99,7 +171,15 @@ window.SCRAPBOOK_PAGES = [
     "note": "For cosy weather, warm drinks and staying close.",
     "paper": "lilac",
     "doodle": "❀",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 11,
@@ -109,7 +189,15 @@ window.SCRAPBOOK_PAGES = [
     "note": "Friends, family and the people who make our world bigger.",
     "paper": "sage",
     "doodle": "♥",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 12,
@@ -119,7 +207,15 @@ window.SCRAPBOOK_PAGES = [
     "note": "Every place feels different when we are there together.",
     "paper": "blush",
     "doodle": "♡",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 13,
@@ -129,7 +225,15 @@ window.SCRAPBOOK_PAGES = [
     "note": "For cinema dates, comfort movies and snacks we pretend to share.",
     "paper": "cream",
     "doodle": "✿",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 14,
@@ -139,7 +243,15 @@ window.SCRAPBOOK_PAGES = [
     "note": "Absolutely no serious memories allowed here.",
     "paper": "butter",
     "doodle": "✦",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 15,
@@ -149,7 +261,15 @@ window.SCRAPBOOK_PAGES = [
     "note": "One reason per photo. Then another. Then another.",
     "paper": "sky",
     "doodle": "☾",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 16,
@@ -159,7 +279,15 @@ window.SCRAPBOOK_PAGES = [
     "note": "Because being with you is enough of a reason to keep a day.",
     "paper": "lilac",
     "doodle": "❀",
-    "photos": []
+    "photos": [
+      {
+        "slot": 1,
+        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
+        "caption": "",
+        "sticker": "",
+        "rotation": -2.5
+      }
+    ]
   },
   {
     "page": 17,
