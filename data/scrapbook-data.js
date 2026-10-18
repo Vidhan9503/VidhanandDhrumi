@@ -14,7 +14,7 @@ window.SCRAPBOOK_PAGES = [
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
         "caption": "The Idiots!!",
-        "sticker": "",
+        "sticker": "The Idiots!!",
         "rotation": -2.5
       }
     ]
@@ -32,7 +32,7 @@ window.SCRAPBOOK_PAGES = [
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
         "caption": "Big Girl now",
-        "sticker": "",
+        "sticker": "Big Girl now",
         "rotation": -2.5
       }
     ]
@@ -50,7 +50,7 @@ window.SCRAPBOOK_PAGES = [
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
         "caption": "Our Little Family!!",
-        "sticker": "",
+        "sticker": "Our Little Family!!",
         "rotation": -2.5
       }
     ]
@@ -93,36 +93,36 @@ window.SCRAPBOOK_PAGES = [
   },
   {
     "page": 6,
-    "title": "Food Dates",
-    "subtitle": "love, but make it delicious",
+    "title": "Initial Dates ❤️❤️",
+    "subtitle": "Starting to Know you more!!",
     "date": null,
-    "note": "For the meals, midnight snacks and 'what should we eat?' debates.",
+    "note": "Ceconni's, Nut Cracker.....",
     "paper": "cream",
     "doodle": "✿",
     "photos": [
       {
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
-        "caption": "",
-        "sticker": "",
+        "caption": "Just felt perfect!!",
+        "sticker": "Just felt perfect!!",
         "rotation": -2.5
       }
     ]
   },
   {
     "page": 7,
-    "title": "Food Dates",
-    "subtitle": "love, but make it delicious",
+    "title": "Arjit Singh Concert",
+    "subtitle": "Never felt anything as perfect as this",
     "date": null,
-    "note": "For the meals, midnight snacks and 'what should we eat?' debates.",
+    "note": "Just wished to hug you with Arjit's voice in background",
     "paper": "cream",
     "doodle": "✿",
     "photos": [
       {
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
-        "caption": "",
-        "sticker": "",
+        "caption": "Looked super hot",
+        "sticker": "Looked super hot",
         "rotation": -2.5
       }
     ]
