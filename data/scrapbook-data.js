@@ -271,8 +271,7 @@ window.SCRAPBOOK_PAGES = [
       }
     ]
   },
-
-];
+ ];
 /**
   {
     "page": 16,
