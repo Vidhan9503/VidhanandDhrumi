@@ -271,6 +271,8 @@ window.SCRAPBOOK_PAGES = [
       }
     ]
   },
+
+];
 /**
   {
     "page": 16,
@@ -382,5 +384,4 @@ window.SCRAPBOOK_PAGES = [
   },
 
 **/ 
-];
 
