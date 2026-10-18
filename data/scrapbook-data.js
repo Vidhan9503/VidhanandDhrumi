@@ -32,7 +32,7 @@ window.SCRAPBOOK_PAGES = [
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
         "caption": "Big Girl now",
-        "sticker": "Big Girl now",
+        "sticker": "",
         "rotation": -2.5
       }
     ]
@@ -50,7 +50,7 @@ window.SCRAPBOOK_PAGES = [
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
         "caption": "Our Little Family!!",
-        "sticker": "Our Little Family!!",
+        "sticker": "",
         "rotation": -2.5
       }
     ]
@@ -68,7 +68,7 @@ window.SCRAPBOOK_PAGES = [
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
         "caption": "Wish Time froze there!!",
-        "sticker": "Wish Time froze there!!",
+        "sticker": "",
         "rotation": -2.5
       }
     ]
@@ -86,7 +86,7 @@ window.SCRAPBOOK_PAGES = [
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
         "caption": "Feels like yesterday",
-        "sticker": "Feels like yesterday",
+        "sticker": "",
         "rotation": -2.5
       }
     ]
@@ -104,7 +104,7 @@ window.SCRAPBOOK_PAGES = [
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
         "caption": "Just felt perfect!!",
-        "sticker": "Just felt perfect!!",
+        "sticker": "",
         "rotation": -2.5
       }
     ]
@@ -122,24 +122,24 @@ window.SCRAPBOOK_PAGES = [
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
         "caption": "Looked super hot",
-        "sticker": "Looked super hot",
+        "sticker": "",
         "rotation": -2.5
       }
     ]
   },
   {
     "page": 8,
-    "title": "Little Celebrations",
-    "subtitle": "tiny reasons to be happy",
+    "title": "Plutieeee ❤️❤️",
+    "subtitle": "Our Cutie Patootie baby",
     "date": null,
-    "note": "Birthdays, wins, surprises and everything in between.",
+    "note": "Will always be our baby",
     "paper": "butter",
     "doodle": "✦",
     "photos": [
       {
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
-        "caption": "",
+        "caption": "Innocent but not much!!",
         "sticker": "",
         "rotation": -2.5
       }
@@ -147,17 +147,17 @@ window.SCRAPBOOK_PAGES = [
   },
   {
     "page": 9,
-    "title": "Us Being Us",
-    "subtitle": "no explanation necessary",
+    "title": "Happy Birthday ❤️❤️",
+    "subtitle": "19 years then",
     "date": null,
-    "note": "The photos that need zero context.",
+    "note": "Who knew just a week from now we would be going on a date",
     "paper": "sky",
     "doodle": "☾",
     "photos": [
       {
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
-        "caption": "",
+        "caption": "Little Princess ❤️🥰",
         "sticker": "",
         "rotation": -2.5
       }
@@ -165,17 +165,17 @@ window.SCRAPBOOK_PAGES = [
   },
   {
     "page": 10,
-    "title": "A Rainy Day",
-    "subtitle": "soft days and slow hours",
+    "title": "Initial IIT Days",
+    "subtitle": "Small wait with Lots of happiness before we met each other",
     "date": null,
-    "note": "For cosy weather, warm drinks and staying close.",
+    "note": "Starbucks and Subway had become our spot ❤️🥰”,
     "paper": "lilac",
     "doodle": "❀",
     "photos": [
       {
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
-        "caption": "",
+        "caption": "Cute as ever!!",
         "sticker": "",
         "rotation": -2.5
       }
@@ -183,10 +183,10 @@ window.SCRAPBOOK_PAGES = [
   },
   {
     "page": 11,
-    "title": "Our People",
-    "subtitle": "the ones around our story",
+    "title": "PM Tenure",
+    "subtitle": "Ups and Down but always together ❤️",
     "date": null,
-    "note": "Friends, family and the people who make our world bigger.",
+    "note": "Hectic but our bond just grew stronger",
     "paper": "sage",
     "doodle": "♥",
     "photos": [
@@ -201,7 +201,7 @@ window.SCRAPBOOK_PAGES = [
   },
   {
     "page": 12,
-    "title": "Places We Love",
+    "title": "My Favourite Picture",
     "subtitle": "little pins on our map",
     "date": null,
     "note": "Every place feels different when we are there together.",
@@ -211,7 +211,7 @@ window.SCRAPBOOK_PAGES = [
       {
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
-        "caption": "",
+        "caption": "Favourite Person",
         "sticker": "",
         "rotation": -2.5
       }
@@ -219,17 +219,17 @@ window.SCRAPBOOK_PAGES = [
   },
   {
     "page": 13,
-    "title": "Movie Night",
-    "subtitle": "two seats, one blanket",
+    "title": "MCA",
+    "subtitle": "Perfect Weekend plan",
     "date": null,
-    "note": "For cinema dates, comfort movies and snacks we pretend to share.",
+    "note": "Wish to be there in the moment again",
     "paper": "cream",
     "doodle": "✿",
     "photos": [
       {
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
-        "caption": "",
+        "caption": "Just felt different!!",
         "sticker": "",
         "rotation": -2.5
       }
@@ -237,17 +237,17 @@ window.SCRAPBOOK_PAGES = [
   },
   {
     "page": 14,
-    "title": "The Silly Page",
-    "subtitle": "serious memories only",
+    "title": "My Convocation",
+    "subtitle": "Could not wish anyone else besides me",
     "date": null,
-    "note": "Absolutely no serious memories allowed here.",
+    "note": "You were great sports and loved making you meet all my friends",
     "paper": "butter",
     "doodle": "✦",
     "photos": [
       {
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
-        "caption": "",
+        "caption": "Last moments in IIT 🥹",
         "sticker": "",
         "rotation": -2.5
       }
@@ -255,22 +255,23 @@ window.SCRAPBOOK_PAGES = [
   },
   {
     "page": 15,
-    "title": "Things I Love About You",
-    "subtitle": "a page I could never finish",
+    "title": "Cutest Pic",
+    "subtitle": "Did not wish to leave for office",
     "date": null,
-    "note": "One reason per photo. Then another. Then another.",
+    "note": "Just wished to cuddle up and sleep",
     "paper": "sky",
     "doodle": "☾",
     "photos": [
       {
         "slot": 1,
         "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
-        "caption": "",
+        "caption": "Cute Hehehe!!!!",
         "sticker": "",
         "rotation": -2.5
       }
     ]
   },
+/**
   {
     "page": 16,
     "title": "A Perfectly Ordinary Day",
@@ -379,22 +380,7 @@ window.SCRAPBOOK_PAGES = [
     "doodle": "✿",
     "photos": []
   },
-  {
-    "page": 26,
-    "title": "ccdcsdc",
-    "subtitle": "Where we laughed a lot",
-    "date": null,
-    "note": "vvd",
-    "paper": "cream",
-    "doodle": "♡",
-    "photos": [
-      {
-        "slot": 1,
-        "src": "media/scrapbook/Screenshot_2026-09-06_at_3.38.08_PM.png",
-        "caption": "",
-        "sticker": "",
-        "rotation": -2.5
-      }
-    ]
-  }
+
+**/ 
 ];
+
